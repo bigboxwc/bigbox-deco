@@ -2,6 +2,8 @@
 
 BigBox Deco.
 
+![Deco](https://cldup.com/GksXbth44n.png)
+
 ## Install
 
 ```
