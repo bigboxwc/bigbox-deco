@@ -1,0 +1,24 @@
+.navbar-mobile-toggle--open {
+	margin-right: 0;
+
+	@include vertical-spacing("margin", "up");
+}
+
+.navbar-menu--primary .sub-menu {
+	border: 2px solid gray("300");
+	box-shadow: none;
+}
+
+.navbar-menu--primary .offcanvas-drawer__content {
+	justify-content: center;
+}
+
+.navbar-menu--primary .menu-item a {
+	font-weight: $font-weight-bold;
+	text-transform: uppercase;
+}
+
+.navbar-menu--primary .navbar-menu__items > .menu-item > a {
+	padding-left: $spacer;
+	padding-right: $spacer;
+}

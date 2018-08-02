@@ -1,0 +1,8 @@
+body {
+	border: 8px solid transparent;
+
+	@include media-breakpoint-up(md) {
+		border-width: 10px;
+		padding: $spacer;
+	}
+}

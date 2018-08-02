@@ -1,0 +1,12 @@
+.navbar {
+	padding-bottom: $spacer;
+}
+
+.navbar__inner {
+	flex-direction: column;
+}
+
+.navbar-menu--primary {
+	border-top: 0 !important;
+	margin-top: $spacer;
+}

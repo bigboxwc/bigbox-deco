@@ -1,0 +1,22 @@
+// Load the parent theme's images.
+$image-path: "./../../../bigbox/public/images";
+$grid-gutter-width: ( $spacer * 2.50 );
+
+// Load all of the parent theme.
+@import "./../../../../bigbox/resources/assets/scss/style.scss";
+
+@import "elements/body";
+
+@import "modules/card";
+@import "modules/icon";
+@import "modules/branding";
+@import "modules/site-title";
+@import "modules/product";
+@import "modules/navbar";
+@import "modules/navbar-search";
+@import "modules/menu";
+@import "modules/page-title";
+@import "modules/page-flow";
+@import "modules/wp-block-cover-image";
+@import "modules/bubble";
+@import "modules/woocommerce";

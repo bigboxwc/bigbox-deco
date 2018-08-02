@@ -1,0 +1,52 @@
+.bubble {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	position: absolute;
+}
+
+.bubble-1 {
+	background: #009f6d;
+	top: -15px;
+	right: -4px;
+}
+
+.bubble-2 {
+	background: #e8b4b5;
+	top: 380px;
+	left: 5px;
+	width: 75px;
+	height: 75px;
+
+	// Custom shop page.
+	.page-template-archive-product-page & {
+		z-index: -1;
+	}
+}
+
+.bubble-3 {
+	border: 5px solid #ffc107;
+	top: -10px;
+	right: 30px;
+	width: 40px;
+	height: 40px;
+	z-index: 2;
+}
+
+.bubble-4 {
+	background: #e8b4b5;
+	top: 10px;
+	right: 20px;
+	width: 20px;
+	height: 20px;
+	z-index: 2;
+}
+
+.bubble-5 {
+	border: 5px solid #009f6d;
+	top: 380px;
+	left: 5px;
+	width: 35px;
+	height: 35px;
+	z-index: 2;
+}

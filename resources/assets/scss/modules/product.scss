@@ -1,0 +1,15 @@
+.product__inner {
+	border-bottom: 0;
+}
+
+.product__preview {
+	max-width: none;
+
+	img {
+		min-width: 100%;
+	}
+}
+
+.product__sale {
+	padding: 5px 5px 3px;
+}

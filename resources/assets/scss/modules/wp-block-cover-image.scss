@@ -1,0 +1,24 @@
+.home .wp-block-cover-image {
+	margin-top: 0;
+	position: relative;
+	z-index: 2;
+	justify-content: flex-start;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+	.wp-block-cover-image-text {
+		font-size: 42px;
+		font-family: "Oswald";
+		text-shadow: 0 0 10px #bec9e0;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 0;
+
+		@include media-breakpoint-up(md) {
+			font-size: 6vw;
+			text-align: left;
+			text-shadow: 0 0 20px #bec9e0;
+			padding-left: 80px;
+		}
+	}
+}

@@ -1,0 +1,71 @@
+.woocommerce-notice-list__item .woocommerce-Button,
+.woocommerce-notice-list__item .wc-forward,
+.woocommerce-Message .button,
+.woocommerce-error .button {
+	position: relative;
+	vertical-align: bottom;
+}
+
+.woocommerce-cart-wrapper__purchase-form {
+
+	@include grow-column( (
+		sm: 6,
+		md: 5,
+	) );
+}
+
+.wc_payment_method label[for^="payment_method"] {
+	margin-left: -($spacer);
+}
+
+.woocommerce-form-coupon [name="apply_coupon"] {
+	width: 100%;
+	margin-top: $spacer;
+}
+
+.woocommerce-form-coupon .form-row-last {
+	margin-left: 0;
+}
+
+.woocommerce-single-product-purchase {
+
+	h2 {
+		font-size: $font-size-base;
+
+		@include vertical-spacing("margin", "up", (
+			sm: 2,
+		) );
+	}
+}
+
+.woocommerce-single-product-data__section {
+	overflow: visible;
+}
+
+@include media-breakpoint-up(lg) {
+
+	.woocommerce-product-gallery {
+
+		.flex-control-nav {
+			flex-direction: row;
+			flex-wrap: wrap;
+			order: 2;
+			width: 100%;
+			max-width: none;
+			margin: $spacer 0 0 0;
+
+			li {
+				width: 22.7%;
+				margin-right: 3%;
+
+				&:nth-child(4n) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+.woocommerce-product-gallery--with-images {
+	max-width: 600px;
+}
