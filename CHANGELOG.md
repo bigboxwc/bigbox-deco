@@ -2,7 +2,7 @@
 
 ### New
 
-- BigBox 1.16.0 compatibility.
+- BigBox 2.0.0 compatibility.
 
 ## [1.0.0] - 2018-08-02
 
