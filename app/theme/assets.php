@@ -32,7 +32,7 @@ function bigbox_deco_enqueue_styles() {
 	add_filter( 'bigbox_customize_css_inline', '__return_false' );
 	wp_add_inline_style( $stylesheet_deco, bigbox_customize_inline_css() );
 }
-add_action( 'wp_enqueue_scripts', 'bigbox_deco_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'bigbox_deco_enqueue_styles', 30 );
 
 /**
  * Enqueue the "Oswald" font family.
