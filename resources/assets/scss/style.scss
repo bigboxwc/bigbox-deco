@@ -3,10 +3,23 @@ $image-path: "./../../../bigbox/public/images";
 $spacer: 1rem;
 $grid-gutter-width: ( $spacer * 2.50 );
 
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+) !default;
+
+$container-max-widths: (
+	xl: 1150px,
+) !default;
+
 // Load all of the parent theme.
-@import "./../../../../bigbox/resources/assets/scss/style.scss";
+@import "./../../../../bigbox/resources/assets/scss/app.scss";
 
 @import "elements/body";
+@import "elements/h";
 
 @import "modules/card";
 @import "modules/icon";
