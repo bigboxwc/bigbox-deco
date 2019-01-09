@@ -35,28 +35,27 @@
 		"webpack": "4.28.1",
 		"webpack-cli": "3.2.1"
 	},
-	"eslintConfig": {
-		"extends": [
-			"plugin:wordpress/recommended",
-			"plugin:wordpress/esnext",
-			"plugin:wordpress/jsdoc",
-			"plugin:wordpress/strict"
-		],
-		"plugins": [
-			"wordpress"
-		]
-	},
 	"babel": {
 		"presets": [
-			"@wordpress/default",
+			"@wordpress/babel-preset-default",
 			{
 				"plugins": [
 					"import-glob",
-					"transform-react-jsx"
+					[
+						"@wordpress/babel-plugin-import-jsx-pragma",
+						{
+							"scopeVariable": "createElement",
+							"source": "@wordpress/element",
+							"isDefault": false
+						}
+					]
 				]
 			}
 		]
 	},
+	"browserslist": [
+		"extends @wordpress/browserslist-config"
+	],
 	"scripts": {
 		"build": "cross-env NODE_ENV=production webpack",
 		"css-lint": "./node_modules/.bin/stylelint resources/**/*.scss --syntax scss; exit 0",
