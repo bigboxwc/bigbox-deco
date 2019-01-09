@@ -21,7 +21,7 @@ domReady( () => {
 		const offset = window.pageYOffset;
 
 		if ( offset > 50 && offset < 500 ) {
-			cover.style.transform = `translate3d(0, ${ ( offset / 100 ) * 6 }px, 0)`
+			cover.style.transform = `translate3d(0, ${ ( offset / 100 ) * 6 }px, 0)`;
 		}
 	} );
 } );
