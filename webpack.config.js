@@ -58,6 +58,9 @@ const config = {
 	plugins: [
 		themeCSS,
 	],
+	externals: {
+		'@wordpress/element': 'wp.element',
+	},
 };
 
 if ( config.mode !== 'production' ) {
