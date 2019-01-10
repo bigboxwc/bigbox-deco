@@ -31,7 +31,7 @@
 		"sass-loader": "7.1.0",
 		"stylelint": "9.9.0",
 		"stylelint-config-wordpress": "13.1.0",
-		"webpack": "4.28.1",
+		"webpack": "4.28.4",
 		"webpack-cli": "3.2.1"
 	},
 	"babel": {
