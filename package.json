@@ -32,7 +32,7 @@
 		"stylelint": "9.10.1",
 		"stylelint-config-wordpress": "13.1.0",
 		"webpack": "4.29.6",
-		"webpack-cli": "3.2.3"
+		"webpack-cli": "3.3.0"
 	},
 	"babel": {
 		"presets": [
