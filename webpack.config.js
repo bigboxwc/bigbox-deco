@@ -2,39 +2,14 @@
  * External dependencies
  */
 const webpack = require( 'webpack' );
-const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
-
-const themeCSS = new ExtractTextPlugin( {
-	filename: './public/css/app.min.css',
-} );
-
-// Configuration for the ExtractTextPlugin.
-const extractConfig = {
-	use: [
-		{
-			loader: 'raw-loader',
-		},
-		{
-			loader: 'postcss-loader',
-			options: {
-				plugins: [
-					require( 'autoprefixer' ),
-				],
-			},
-		},
-		{
-			loader: 'sass-loader',
-			query: {
-				outputStyle: 'production' === process.env.NODE_ENV ? 'compressed' : 'nested',
-			},
-		},
-	],
-};
+const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
+const FixStyleOnlyEntriesPlugin = require( 'webpack-fix-style-only-entries' );
 
 const config = {
 	mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
 	entry: {
 		app: './resources/assets/js',
+		'app-css': './resources/assets/scss/style.scss',
 	},
 	output: {
 		filename: 'public/js/[name].min.js',
@@ -49,14 +24,40 @@ const config = {
 				include: /js/,
 			},
 			{
-				test: /style\.scss$/,
-				use: themeCSS.extract( extractConfig ),
+				test: /\.(scss|css)$/,
+				use: [
+					MiniCssExtractPlugin.loader,
+					{
+						loader: 'css-loader',
+						options: {
+							url: false,
+						},
+					},
+					{
+						loader: 'postcss-loader',
+						options: {
+							plugins: [
+								require( 'autoprefixer' ),
+							],
+						},
+					},
+					{
+						loader: 'sass-loader',
+						query: {
+							outputStyle: 'production' === process.env.NODE_ENV ? 'compressed' : 'nested',
+						},
+					},
+				],
+				exclude: /node_modules/,
 				include: /scss/,
 			},
 		],
 	},
 	plugins: [
-		themeCSS,
+		new FixStyleOnlyEntriesPlugin(),
+		new MiniCssExtractPlugin( {
+			filename: './public/css/[name].min.css',
+		} ),
 	],
 	externals: {
 		'@wordpress/element': 'wp.element',

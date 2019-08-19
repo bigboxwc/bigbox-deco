@@ -22,17 +22,20 @@
 		"babel-plugin-import-glob": "2.0.0",
 		"bootstrap": "4.2.1",
 		"cross-env": "5.2.0",
+		"css-loader": "^3.2.0",
 		"eslint": "6.2.0",
 		"exports-loader": "0.7.0",
-		"extract-text-webpack-plugin": "4.0.0-beta.0",
+		"mini-css-extract-plugin": "0.8.0",
 		"node-sass": "4.12.0",
 		"postcss-loader": "3.0.0",
 		"raw-loader": "3.1.0",
 		"sass-loader": "7.2.0",
+		"simplebar": "4.1.0",
 		"stylelint": "10.1.0",
 		"stylelint-config-wordpress": "14.0.0",
 		"webpack": "4.39.2",
-		"webpack-cli": "3.3.7"
+		"webpack-cli": "3.3.7",
+		"webpack-fix-style-only-entries": "0.3.0"
 	},
 	"babel": {
 		"presets": [

@@ -24,7 +24,7 @@ function bigbox_deco_enqueue_styles() {
 	$stylesheet_deco  = $stylesheet_parent . '-deco';
 
 	wp_dequeue_style( $stylesheet_parent );
-	wp_enqueue_style( $stylesheet_deco, get_stylesheet_directory_uri() . '/public/css/app.min.css', [], $version );
+	wp_enqueue_style( $stylesheet_deco, get_stylesheet_directory_uri() . '/public/css/app-css.min.css', [], $version );
 
 	wp_enqueue_script( $stylesheet_deco, get_stylesheet_directory_uri() . '/public/js/app.min.js', [], $version );
 
