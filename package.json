@@ -33,7 +33,7 @@
 		"simplebar": "4.2.1",
 		"stylelint": "10.1.0",
 		"stylelint-config-wordpress": "14.0.0",
-		"webpack": "4.39.3",
+		"webpack": "4.40.0",
 		"webpack-cli": "3.3.8",
 		"webpack-fix-style-only-entries": "0.4.0"
 	},
