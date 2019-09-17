@@ -34,7 +34,7 @@
 		"stylelint": "11.0.0",
 		"stylelint-config-wordpress": "14.0.0",
 		"webpack": "4.40.2",
-		"webpack-cli": "3.3.8",
+		"webpack-cli": "3.3.9",
 		"webpack-fix-style-only-entries": "0.4.0"
 	},
 	"babel": {
