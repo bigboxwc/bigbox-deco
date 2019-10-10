@@ -31,7 +31,7 @@
 		"raw-loader": "3.1.0",
 		"sass-loader": "8.0.0",
 		"simplebar": "4.2.3",
-		"stylelint": "11.1.0",
+		"stylelint": "11.1.1",
 		"stylelint-config-wordpress": "15.0.0",
 		"webpack": "4.41.0",
 		"webpack-cli": "3.3.9",
